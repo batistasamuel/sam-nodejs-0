@@ -1,10 +1,10 @@
 'use strict'
 
 const fibonacci = () => {
-    var indices = [];
+    const indices = [];
     let F = 0;
     let i = 1;
-    while (F < 350) {
+    while (F <= 350) {
         F = Math.round(((((1+Math.sqrt(5))/2)**i) - (((1-Math.sqrt(5))/2)**i))/(Math.sqrt(5)));
         indices.push(F)
         i++;
@@ -13,15 +13,20 @@ const fibonacci = () => {
 }
 
 const isFibonnaci = (num) => {
-    let Lista = fibonacci(); 
-    var estaNaLista = [];
+    const Lista = fibonacci(); 
+    let result = 0;
+    let estaNaLista = [
+        true,
+        false
+    ];
     if (Lista.indexOf(num) != -1) {
-        estaNaLista = true;
+        result = estaNaLista[0];
     } else {
-        estaNaLista = false;
+        result = estaNaLista[1];
     }
-    return estaNaLista;
+    return result;
 }
+
 
 module.exports = {
     fibonacci,
