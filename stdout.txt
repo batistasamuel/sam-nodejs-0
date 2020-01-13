@@ -1,3 +1,17 @@
-audited 51 packages in 1.276s
-found 0 vulnerabilities
+
+> nodejs-0@1.0.0 test /home/samuka/codenation/nodejs-0
+> mocha test/index.test.js
+
+true
+
+
+  fibonacci
+    ✓ should get fibonacci sequence until it passes 350
+
+  isFibonacci
+    ✓ should return true when the number is a fibonacci
+    ✓ should return false when the number isn't a fibonacci
+
+
+  3 passing (6ms)
 

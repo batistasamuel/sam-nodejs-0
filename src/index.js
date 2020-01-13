@@ -22,7 +22,6 @@ const isFibonnaci = (num) => {
     }
     return estaNaLista;
 }
-console.log(isFibonnaci(5));
 
 module.exports = {
     fibonacci,
