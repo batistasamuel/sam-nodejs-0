@@ -2,7 +2,6 @@
 > nodejs-0@1.0.0 test /home/samuka/codenation/nodejs-0
 > mocha test/index.test.js
 
-true
 
 
   fibonacci
@@ -13,5 +12,5 @@ true
     ✓ should return false when the number isn't a fibonacci
 
 
-  3 passing (6ms)
+  3 passing (9ms)
 
