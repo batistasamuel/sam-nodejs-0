@@ -1,13 +1,10 @@
 'use strict'
-
 const fibonacci = () => {
-    const indices = [];
-    let F = 0;
+    let indices = [1,1]
     let i = 1;
-    while (F <= 350) {
-        F = Math.round(((((1+Math.sqrt(5))/2)**i) - (((1-Math.sqrt(5))/2)**i))/(Math.sqrt(5)));
-        indices.push(F)
+    while (indices[i] <= 350) {
         i++;
+        indices.push(indices[i-2]+indices[i-1]);
     }
     return indices
 }
@@ -26,7 +23,6 @@ const isFibonnaci = (num) => {
     }
     return result;
 }
-
 
 module.exports = {
     fibonacci,
